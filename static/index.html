@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thania - Colección Premium 2026</title>
+    <meta name="description"
+        content="Catálogo oficial de Thania. Calidad y estilo en cada paso. Zapatillas urbanas premium.">
+
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thania - Catálogo Oficial 2026">
+    <meta property="og:description"
+        content="Descubrí lo último en zapatillas urbanas. Calidad Premium y Envío a todo el país.">
+    <meta property="og:url" content="https://thaniacatalogo.github.io/">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Thania</h1>
+            <p>Panel de Control - Catálogo Automático</p>
+        </header>
+
+        <main>
+            <section class="controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Buscar marca o modelo (ej. Jordan)...">
+                </div>
+                <div class="filter-group" id="brandFilters">
+                    <!-- Botones de marcas automáticos -->
+                </div>
+                <div class="main-buttons">
+                    <button id="refreshBtn" class="btn premium">Sincronizar Datos</button>
+                    <a href="/api/download" id="downloadBtn" class="btn secondary">Descargar PDF</a>
+                </div>
+            </section>
+
+            <section id="status" class="status-msg"></section>
+
+            <section class="catalog-header">
+                <h2>Catálogo Premium</h2>
+                <p>Lo último en Zapatillas Urbanas</p>
+            </section>
+
+            <div id="catalogGrid" class="catalog-grid">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
